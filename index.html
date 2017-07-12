@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pomodoro</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="dist/main.css">
+</head>
+<body>
+	<h1>Pomodoro!</h1>
+	<div id="test"></div>
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-12 col-md-auto"> 
+				<div class="break-ctrl">
+					<span>Break Length</span> <br>
+					<button class="minus">-</button>
+					<span id="break-time"> 5 </span>
+					<button class="plus">+</button>
+				</div>
+			</div>
+			<div class="col-12 col-md-auto"> 
+				<div class="session-ctrl">
+					<span>Session Length</span> <br> 
+					<button class="minus">-</button>
+					<span id="session-time"> 25 </span>
+					<button class="plus">+</button>
+				</div>
+			</div>
+		</div>
+		<br>
+		<h2 id="mode">Session</h2>
+		<div id="pomodoro" class="pomodoroTimer">
+			<div id="timer">
+				<span>00:25:00</span>
+			</div>
+			<div class="info">
+				<span>Hour &nbsp; &nbsp; | &nbsp; &nbsp; Minute &nbsp; &nbsp; | &nbsp; Second</span>
+			</div>	
+		</div>
+	</div>
+	<script src="/node_modules/angular/angular.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="dist/main.bundle.js"></script>
+</body>
+</html>
